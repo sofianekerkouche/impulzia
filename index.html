@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Impulzia vous aide à créer et développer votre présence en ligne grâce à des sites performants, un référencement puissant et une stratégie sur mesure." />
+  <meta name="keywords" content="agence web, création site internet, SEO, référencement, stratégie digitale, site vitrine" />
+  <meta property="og:title" content="Impulzia — Le digital, au service de vos ambitions." />
+  <meta property="og:description" content="Impulzia vous aide à créer et développer votre présence en ligne grâce à des sites performants, un référencement puissant et une stratégie sur mesure." />
+  <meta property="og:type" content="website" />
+  <title>Impulzia — Création Web · SEO · Stratégie Digitale</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════
+       NAVBAR
+  ══════════════════════════════════════════ -->
+  <nav id="navbar" role="navigation" aria-label="Navigation principale">
+    <div class="container nav-inner">
+
+      <a href="#accueil" class="nav-logo" aria-label="Impulzia — Retour à l'accueil">
+        <svg width="44" height="44" viewBox="0 0 64 64" overflow="visible" aria-hidden="true" class="nav-logo-svg">
+          <defs>
+            <linearGradient id="logo-nav" x1="0%" y1="100%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#1A73E8" />
+              <stop offset="100%" stop-color="#00D4AA" />
+            </linearGradient>
+          </defs>
+          <line x1="10" y1="54" x2="32" y2="34" stroke="url(#logo-nav)" stroke-width="4" stroke-linecap="round"/>
+          <line x1="32" y1="34" x2="54" y2="14" stroke="url(#logo-nav)" stroke-width="4" stroke-linecap="round"/>
+          <circle cx="10" cy="54" r="6.5" fill="#1A73E8"/>
+          <circle cx="32" cy="34" r="8.5" fill="url(#logo-nav)"/>
+          <circle cx="54" cy="14" r="11.5" fill="#00D4AA" style="filter: drop-shadow(0 0 8px rgba(0,212,170,0.85));"/>
+        </svg>
+        <span class="nav-wordmark">Impulzia</span>
+      </a>
+
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#tarifs">Tarifs</a></li>
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact" class="nav-cta">Démarrer un projet</a></li>
+      </ul>
+
+      <button class="nav-burger" id="nav-burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+
+    </div>
+  </nav>
+
+
+  <!-- ══════════════════════════════════════════
+       HERO
+  ══════════════════════════════════════════ -->
+  <section id="accueil" class="hero" aria-label="Présentation Impulzia">
+    <canvas id="particle-canvas" aria-hidden="true"></canvas>
+    <div class="hero-glow hero-glow--blue" aria-hidden="true"></div>
+    <div class="hero-glow hero-glow--teal" aria-hidden="true"></div>
+
+    <div class="container hero-inner">
+
+      <!-- Content -->
+      <div class="hero-content">
+        <div class="hero-badge reveal">
+          <span class="badge-dot" aria-hidden="true"></span>
+          Création web &bull; SEO &bull; Stratégie digitale
+        </div>
+
+        <h1 class="hero-title reveal delay-1">
+          Le digital,<br>
+          <span class="gradient-text">au service<br>de vos ambitions.</span>
+        </h1>
+
+        <p class="hero-desc reveal delay-2">
+          Impulzia vous aide à créer et développer votre présence en ligne grâce à des sites performants, un référencement puissant et une stratégie sur mesure.
+        </p>
+
+        <div class="hero-actions reveal delay-3">
+          <a href="#tarifs" class="btn btn--primary" id="hero-cta-tarifs">
+            Voir nos offres <span class="btn-arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="#contact" class="btn btn--ghost" id="hero-cta-contact">Démarrer mon projet</a>
+        </div>
+
+        <div class="hero-stats reveal delay-4" aria-label="Chiffres clés">
+          <div class="stat">
+            <div>
+              <span class="stat-number" data-target="50">0</span><span class="stat-plus">+</span>
+            </div>
+            <span class="stat-label">Projets réalisés</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat">
+            <div>
+              <span class="stat-number" data-target="100">0</span><span class="stat-plus">&thinsp;%</span>
+            </div>
+            <span class="stat-label">Clients satisfaits</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat">
+            <div>
+              <span class="stat-plus" style="font-size:1.8rem; margin-right:2px;">x&nbsp;</span><span class="stat-number" data-target="3">0</span>
+            </div>
+            <span class="stat-label">Visibilité en moyenne</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Visual -->
+      <div class="hero-visual reveal delay-2" aria-hidden="true">
+        <div class="hero-logo-mark">
+          <svg class="hero-svg neural-articulated-svg" id="neural-svg" viewBox="0 0 360 360" fill="none" overflow="visible">
+            <defs>
+              <linearGradient id="neural-grad" x1="0%" y1="100%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#1A73E8"/>
+                <stop offset="100%" stop-color="#00D4AA"/>
+              </linearGradient>
+              <radialGradient id="node-glow-teal" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#00D4AA" stop-opacity="0.85"/>
+                <stop offset="45%" stop-color="#00D4AA" stop-opacity="0.2"/>
+                <stop offset="100%" stop-color="#00D4AA" stop-opacity="0"/>
+              </radialGradient>
+              <radialGradient id="node-glow-blue" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#1A73E8" stop-opacity="0.85"/>
+                <stop offset="45%" stop-color="#1A73E8" stop-opacity="0.2"/>
+                <stop offset="100%" stop-color="#1A73E8" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+
+            <!-- Articulated Synaptic Links -->
+            <g class="neural-links">
+              <!-- Secondary branches -->
+              <line id="link-d-b" x1="285" y1="230" x2="180" y2="180" stroke="rgba(26,115,232,0.35)" stroke-width="2" stroke-dasharray="4 4" stroke-linecap="round"/>
+              <line id="link-e-b" x1="95" y1="100" x2="180" y2="180" stroke="rgba(0,212,170,0.35)" stroke-width="2" stroke-dasharray="4 4" stroke-linecap="round"/>
+              <line id="link-e-c" x1="95" y1="100" x2="270" y2="80" stroke="rgba(0,212,170,0.2)" stroke-width="1.5" stroke-dasharray="3 3" stroke-linecap="round"/>
+              
+              <!-- Primary trajectory links (Impulzia Logo backbone) -->
+              <line id="link-a-b" x1="75" y1="285" x2="180" y2="180" stroke="url(#neural-grad)" stroke-width="5" stroke-linecap="round"/>
+              <line id="link-b-c" x1="180" y1="180" x2="270" y2="80" stroke="url(#neural-grad)" stroke-width="5" stroke-linecap="round"/>
+            </g>
+
+            <!-- Synaptic light pulses -->
+            <circle id="pulse-1" r="5" fill="#00D4AA" opacity="0.95"/>
+            <circle id="pulse-2" r="4" fill="#1A73E8" opacity="0.9"/>
+
+            <!-- Concentric pulse ring around apex node -->
+            <circle id="ripple-c-ring" cx="270" cy="80" r="32" stroke="#00D4AA" stroke-width="1.5" stroke-opacity="0.4" fill="none" class="neural-pulse-ring"/>
+
+            <!-- Satellite Nodes (Articulated Synapses) -->
+            <g id="node-d" class="neural-node">
+              <circle cx="285" cy="230" r="16" fill="url(#node-glow-blue)"/>
+              <circle cx="285" cy="230" r="9" fill="#1A73E8" opacity="0.9"/>
+            </g>
+            <g id="node-e" class="neural-node">
+              <circle cx="95" cy="100" r="15" fill="url(#node-glow-teal)"/>
+              <circle cx="95" cy="100" r="8" fill="#00D4AA" opacity="0.9"/>
+            </g>
+
+            <!-- Primary 3 Impulzia Nodes -->
+            <!-- Node A (Impulse base) -->
+            <g id="node-a" class="neural-node">
+              <circle cx="75" cy="285" r="24" fill="url(#node-glow-blue)"/>
+              <circle cx="75" cy="285" r="13" fill="#1A73E8"/>
+              <circle cx="75" cy="285" r="5" fill="#FFFFFF" opacity="0.9"/>
+            </g>
+
+            <!-- Node B (Core joint) -->
+            <g id="node-b" class="neural-node">
+              <circle cx="180" cy="180" r="30" fill="url(#node-glow-blue)"/>
+              <circle cx="180" cy="180" r="18" fill="url(#neural-grad)"/>
+              <circle cx="180" cy="180" r="6" fill="#FFFFFF" opacity="0.95"/>
+            </g>
+
+            <!-- Node C (Signal apex) -->
+            <g id="node-c" class="neural-node">
+              <circle cx="270" cy="80" r="42" fill="url(#node-glow-teal)"/>
+              <circle cx="270" cy="80" r="23" fill="#00D4AA"/>
+              <circle cx="270" cy="80" r="8" fill="#FFFFFF"/>
+            </g>
+          </svg>
+
+          <!-- Floating showcase cards -->
+          <a href="https://ecolematernellelila.com" target="_blank" rel="noopener noreferrer" class="float-card float-card--1" aria-label="Visiter ecolematernellelila.com">
+            <span class="float-card-icon">🏫</span>
+            <div>
+              <div class="float-card-title">Site lancé</div>
+              <div class="float-card-sub">ecolematernellelila.com <span class="card-ext-icon">↗</span></div>
+            </div>
+          </a>
+
+          <a href="https://lerubikscube.com" target="_blank" rel="noopener noreferrer" class="float-card float-card--2" aria-label="Visiter lerubikscube.com">
+            <span class="float-card-icon">🧩</span>
+            <div>
+              <div class="float-card-title">Site lancé</div>
+              <div class="float-card-sub">lerubikscube.com <span class="card-ext-icon">↗</span></div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="hero-scroll-hint" aria-hidden="true">
+      <div class="scroll-line"></div>
+      <span>Découvrir</span>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════
+       SERVICES
+  ══════════════════════════════════════════ -->
+  <section id="services" class="section section--void" aria-label="Nos services">
+    <div class="container">
+
+      <header class="section-header reveal">
+        <span class="section-tag">Nos expertises</span>
+        <h2 class="section-title">Des expertises au service<br>de votre croissance</h2>
+        <p class="section-desc">Nous intervenons sur les 4 piliers essentiels pour faire décoller votre activité.</p>
+      </header>
+
+      <div class="services-grid" role="list">
+
+        <!-- Création Web -->
+        <article class="service-card reveal" role="listitem">
+          <div class="service-icon" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <defs>
+                <linearGradient id="svc-g1" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#1A73E8"/><stop offset="100%" stop-color="#00D4AA"/>
+                </linearGradient>
+              </defs>
+              <polyline points="16 18 22 12 16 6" stroke="url(#svc-g1)"/>
+              <polyline points="8 6 2 12 8 18" stroke="url(#svc-g1)"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Création Web</h3>
+          <p class="service-desc">Votre entreprise a fait ses preuves sur le terrain : offrez-lui la présence en ligne qu'elle mérite. Nous concevons un site moderne, soigné et travaillé pour faire rayonner votre savoir-faire auprès de votre clientèle.</p>
+          <div class="service-tags">
+            <span class="tag">Site vitrine sur mesure</span>
+            <span class="tag">100% Clé en main</span>
+          </div>
+          <div class="service-hover-line" aria-hidden="true"></div>
+        </article>
+
+        <!-- 2. Branding & Design -->
+        <article class="service-card reveal delay-1" role="listitem">
+          <div class="service-icon" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <defs>
+                <linearGradient id="svc-g2" x1="0%" y1="0%" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#1A73E8"/><stop offset="100%" stop-color="#00D4AA"/>
+                </linearGradient>
+              </defs>
+              <path d="M12 2C6.48 2 2 6.48 2 12c0 4.41 3.59 8 8 8 1.1 0 2-.9 2-2 0-.46-.17-.89-.44-1.22-.27-.33-.44-.76-.44-1.22 0-1.1.9-2 2-2h1.88c4.42 0 8-3.58 8-8 0-5.52-4.48-10-10-10z" stroke="url(#svc-g2)"/>
+              <circle cx="6.5" cy="11.5" r="1.5" fill="url(#svc-g2)"/>
+              <circle cx="9.5" cy="7.5" r="1.5" fill="url(#svc-g2)"/>
+              <circle cx="14.5" cy="7.5" r="1.5" fill="url(#svc-g2)"/>
+              <circle cx="17.5" cy="11.5" r="1.5" fill="url(#svc-g2)"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Branding &amp; Design</h3>
+          <p class="service-desc">Vous n'avez pas encore de site vitrine ou votre site actuel ne vous apporte aucun client ? Nous vous rafraîchissons votre image de marque pour qu'elle soit à la hauteur de votre réputation réelle.</p>
+          <div class="service-tags">
+            <span class="tag">Refonte de site</span>
+            <span class="tag">Branding</span>
+            <span class="tag">Identité visuelle &amp; Logo</span>
+          </div>
+          <div class="service-hover-line" aria-hidden="true"></div>
+        </article>
+
+        <!-- 3. SEO & Visibilité Locale -->
+        <article class="service-card reveal delay-2" role="listitem">
+          <div class="service-icon" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round">
+              <defs>
+                <linearGradient id="svc-g2" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#1A73E8"/><stop offset="100%" stop-color="#00D4AA"/>
+                </linearGradient>
+              </defs>
+              <circle cx="11" cy="11" r="8" stroke="url(#svc-g2)"/>
+              <line x1="21" y1="21" x2="16.65" y2="16.65" stroke="url(#svc-g2)"/>
+            </svg>
+          </div>
+          <h3 class="service-title">SEO &amp; Visibilité Locale</h3>
+          <p class="service-desc">Soyez le premier choix lorsque des clients recherchent vos services dans votre ville ou votre secteur. Nous positionnons votre entreprise tout en haut des résultats Google et Google Maps.</p>
+          <div class="service-tags">
+            <span class="tag">Référencement local</span>
+            <span class="tag">Google My Business &amp; Maps</span>
+            <span class="tag">Visibilité de proximité</span>
+          </div>
+          <div class="service-hover-line" aria-hidden="true"></div>
+        </article>
+
+        <!-- 4. Stratégie Digitale -->
+        <article class="service-card reveal delay-3" role="listitem">
+          <div class="service-icon" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round">
+              <defs>
+                <linearGradient id="svc-g3" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#1A73E8"/><stop offset="100%" stop-color="#00D4AA"/>
+                </linearGradient>
+              </defs>
+              <circle cx="12" cy="12" r="10" stroke="url(#svc-g3)"/>
+              <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" stroke="url(#svc-g3)"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Stratégie Digitale</h3>
+          <p class="service-desc">Nul besoin d’être un expert en informatique pour réussir sur internet. Nous sommes à vos côtés à chaque étape, avec des explications claires et des conseils concrets pour vous aider à développer votre activité.</p>
+          <div class="service-tags">
+            <span class="tag">Écoute &amp; Proximité</span>
+            <span class="tag">Conseils personnalisés</span>
+            <span class="tag">Suivi pas à pas</span>
+          </div>
+          <div class="service-hover-line" aria-hidden="true"></div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════
+       TARIFS
+  ══════════════════════════════════════════ -->
+  <section id="tarifs" class="section section--abyss" aria-label="Nos tarifs">
+    <div class="container">
+
+      <header class="section-header reveal">
+        <span class="section-tag">Nos formules</span>
+        <h2 class="section-title">Des offres transparentes,<br>des résultats concrets</h2>
+        <p class="section-desc">Pas de mauvaises surprises. Des formules claires adaptées à votre étape de développement.</p>
+      </header>
+
+      <div class="pricing-grid" role="list">
+
+        <!-- Starter -->
+        <article class="pricing-card reveal" role="listitem">
+          <header class="pricing-header">
+            <h3 class="pricing-name">Starter</h3>
+            <div class="pricing-price" aria-label="Prix : 790 euros">
+              <span class="price-amount">790</span>
+              <span class="price-currency">€</span>
+            </div>
+            <p class="pricing-sub">Idéal pour démarrer avec une présence professionnelle</p>
+          </header>
+          <ul class="pricing-features" aria-label="Fonctionnalités incluses">
+            <li><span class="feat-check" aria-hidden="true">✓</span> Site vitrine jusqu'à 5 pages</li>
+            <li><span class="feat-check" aria-hidden="true">✓</span> Design personnalisé &amp; responsive</li>
+            <li><span class="feat-check" aria-hidden="true">✓</span> Optimisation mobile &amp; performance</li>
+            <li><span class="feat-check" aria-hidden="true">✓</span> SEO de base (balises, sitemap)</li>
+            <li><span class="feat-check" aria-hidden="true">✓</span> Formulaire de contact</li>
+            <li><span class="feat-check" aria-hidden="true">✓</span> 1 mois de support inclus</li>
+          </ul>
+          <a href="#contact" class="btn btn--ghost btn--full" id="cta-starter">Choisir Starter</a>
+        </article>
+
+        <!-- Business — Featured -->
+        <article class="pricing-card pricing-card--featured reveal delay-1" role="listitem">
+          <div class="pricing-badge" aria-label="Plan recommandé">Recommandé</div>
+          <header class="pricing-header">
+            <h3 class="pricing-name">Business</h3>
+            <div class="pricing-price" aria-label="Prix : 1490 euros">
+              <span class="price-amount">1&thinsp;490</span>
+              <span class="price-currency">€</span>
+            </div>
+            <p class="pricing-sub">Pour les entreprises qui veulent dominer leur marché local</p>
+          </header>
+          <ul class="pricing-features" aria-label="Fonctionnalités incluses">
+            <li><span class="feat-check" aria-hidden="true">✓</span> Jusqu'à 10 pages sur mesure</li>
+            <li><span class="feat-check" aria-hidden="true">✓</span> Audit SEO complet</li>
+            <li><span class="feat-check" aria-hidden="true">✓</span> Référencement local Google</li>
+            <li><span class="feat-check" aria-hidden="true">✓</span> Google My Business optimisé</li>
+            <li><span class="feat-check" aria-hidden="true">✓</span> Intégration Google Analytics</li>
+            <li><span class="feat-check" aria-hidden="true">✓</span> Formation à la mise à jour</li>
+            <li><span class="feat-check" aria-hidden="true">✓</span> 3 mois de support inclus</li>
+          </ul>
+          <a href="#contact" class="btn btn--primary btn--full" id="cta-business">Choisir Business</a>
+        </article>
+
+        <!-- Premium -->
+        <article class="pricing-card reveal delay-2" role="listitem">
+          <header class="pricing-header">
+            <h3 class="pricing-name">Premium</h3>
+            <div class="pricing-price pricing-price--custom" aria-label="Prix : sur devis">
+              <span class="price-amount">Sur devis</span>
+            </div>
+            <p class="pricing-sub">Une stratégie complète pour une croissance durable</p>
+          </header>
+          <ul class="pricing-features" aria-label="Fonctionnalités incluses">
+            <li><span class="feat-check" aria-hidden="true">✓</span> Site sur mesure illimité</li>
+            <li><span class="feat-check" aria-hidden="true">✓</span> Stratégie digitale complète</li>
+            <li><span class="feat-check" aria-hidden="true">✓</span> SEO local poussé &amp; contenu</li>
+            <li><span class="feat-check" aria-hidden="true">✓</span> Suivi mensuel &amp; reporting</li>
+            <li><span class="feat-check" aria-hidden="true">✓</span> Optimisation continue</li>
+            <li><span class="feat-check" aria-hidden="true">✓</span> Accès prioritaire</li>
+            <li><span class="feat-check" aria-hidden="true">✓</span> 6 mois de support inclus</li>
+          </ul>
+          <a href="#contact" class="btn btn--ghost btn--full" id="cta-premium">Demander un devis</a>
+        </article>
+
+      </div>
+
+      <p class="pricing-note reveal">
+        Tous les prix sont indicatifs et peuvent varier selon la complexité du projet.
+        <a href="#contact">Contactez-nous</a> pour un devis personnalisé et gratuit.
+      </p>
+
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════
+       À PROPOS
+  ══════════════════════════════════════════ -->
+  <section id="apropos" class="section section--void" aria-label="À propos d'Impulzia">
+    <div class="container">
+      <div class="about-grid">
+
+        <div class="about-content reveal">
+          <span class="section-tag">À propos</span>
+          <h2 class="section-title" style="text-align:left; margin-bottom:28px;">Impulzia,<br>c'est quoi ?</h2>
+          <p class="about-text">
+            Impulzia est née d'une conviction simple : <strong>chaque entreprise locale mérite une présence en ligne à la hauteur de son ambition.</strong>
+          </p>
+          <p class="about-text">
+            Trop souvent, des commerces de qualité restent invisibles en ligne — faute d'un site performant ou d'une stratégie adaptée. Nous sommes là pour changer ça.
+          </p>
+          <p class="about-text">
+            Notre approche : écouter, comprendre votre marché local, puis agir avec précision pour vous positionner là où vos clients vous cherchent.
+          </p>
+          <a href="#contact" class="btn btn--primary" style="margin-top:2rem;" id="about-cta">
+            Parler de votre projet <span class="btn-arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+
+        <div class="about-values reveal delay-1" role="list" aria-label="Nos valeurs">
+          <div class="value-card" role="listitem">
+            <div class="value-number gradient-text" aria-hidden="true">01</div>
+            <h4 class="value-title">Expertise</h4>
+            <p class="value-desc">Maîtrise technique et stratégique à chaque étape de votre projet.</p>
+          </div>
+          <div class="value-card" role="listitem">
+            <div class="value-number gradient-text" aria-hidden="true">02</div>
+            <h4 class="value-title">Transparence</h4>
+            <p class="value-desc">Pas de jargon, des résultats concrets, mesurables et honnêtes.</p>
+          </div>
+          <div class="value-card" role="listitem">
+            <div class="value-number gradient-text" aria-hidden="true">03</div>
+            <h4 class="value-title">Engagement</h4>
+            <p class="value-desc">Votre réussite est notre priorité. Nous ne lâchons pas avant d'y être.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════
+       TÉMOIGNAGES
+  ══════════════════════════════════════════ -->
+  <section id="temoignages" class="section section--abyss" aria-label="Témoignages clients">
+    <div class="container">
+
+      <header class="section-header reveal">
+        <span class="section-tag">Ils nous font confiance</span>
+        <h2 class="section-title">Ce que disent nos clients</h2>
+      </header>
+
+      <div class="testimonials-grid" role="list">
+
+        <blockquote class="testimonial-card reveal" role="listitem">
+          <div class="testimonial-stars" aria-label="5 étoiles sur 5">★★★★★</div>
+          <p class="testimonial-quote">"Impulzia a complètement transformé notre présence en ligne. En 3 mois, nos réservations ont augmenté de 40% grâce à leur travail sur le SEO local. Un investissement rentabilisé en quelques semaines."</p>
+          <footer class="testimonial-author">
+            <div class="testimonial-avatar" aria-hidden="true">ML</div>
+            <div>
+              <div class="testimonial-name">Marie L.</div>
+              <div class="testimonial-role">Restaurant Le Comptoir</div>
+            </div>
+          </footer>
+        </blockquote>
+
+        <blockquote class="testimonial-card reveal delay-1" role="listitem">
+          <div class="testimonial-stars" aria-label="5 étoiles sur 5">★★★★★</div>
+          <p class="testimonial-quote">"Un travail sérieux, professionnel et rapide. Notre nouveau site vitrine a impressionné tous nos clients dès le premier jour. Je recommande vivement sans hésitation !"</p>
+          <footer class="testimonial-author">
+            <div class="testimonial-avatar" aria-hidden="true">TB</div>
+            <div>
+              <div class="testimonial-name">Thomas B.</div>
+              <div class="testimonial-role">Artisan Plombier</div>
+            </div>
+          </footer>
+        </blockquote>
+
+        <blockquote class="testimonial-card reveal delay-2" role="listitem">
+          <div class="testimonial-stars" aria-label="5 étoiles sur 5">★★★★★</div>
+          <p class="testimonial-quote">"Enfin une agence qui comprend les enjeux des petites entreprises. Ils ont su s'adapter à notre budget tout en livrant un résultat exceptionnel. Merci !"</p>
+          <footer class="testimonial-author">
+            <div class="testimonial-avatar" aria-hidden="true">SK</div>
+            <div>
+              <div class="testimonial-name">Sarah K.</div>
+              <div class="testimonial-role">Boutique Atelier Créatif</div>
+            </div>
+          </footer>
+        </blockquote>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════
+       FAQ
+  ══════════════════════════════════════════ -->
+  <section id="faq" class="section section--void" aria-label="Foire aux questions">
+    <div class="container">
+
+      <header class="section-header reveal">
+        <span class="section-tag">Questions fréquentes</span>
+        <h2 class="section-title">Tout ce que vous voulez savoir</h2>
+      </header>
+
+      <div class="faq-list reveal" role="list">
+
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" id="faq-q1" aria-expanded="false" aria-controls="faq-a1">
+            <span>Combien de temps prend la création d'un site web ?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer" id="faq-a1" role="region" aria-labelledby="faq-q1">
+            <p>En moyenne, un site vitrine est livré en 2 à 4 semaines selon la complexité du projet et la rapidité de validation des étapes. Nous établissons un calendrier précis dès le début de la collaboration.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" id="faq-q2" aria-expanded="false" aria-controls="faq-a2">
+            <span>Puis-je modifier moi-même mon site après la livraison ?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer" id="faq-a2" role="region" aria-labelledby="faq-q2">
+            <p>Oui, nous intégrons une interface de gestion simple si besoin, et nous vous formons à son utilisation. Nous restons également disponibles pour toute modification rapide via nos forfaits de support.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" id="faq-q3" aria-expanded="false" aria-controls="faq-a3">
+            <span>Les résultats SEO seront-ils visibles rapidement ?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer" id="faq-a3" role="region" aria-labelledby="faq-q3">
+            <p>Le SEO est un investissement sur la durée. Les premières améliorations sont souvent visibles en 1 à 3 mois, avec une progression continue et durable sur 6 à 12 mois.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" id="faq-q4" aria-expanded="false" aria-controls="faq-a4">
+            <span>Travaillez-vous uniquement avec des entreprises locales ?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer" id="faq-a4" role="region" aria-labelledby="faq-q4">
+            <p>Notre cœur de cible est la clientèle locale, mais nous travaillons avec tout type d'entreprise. Notre force est justement de comprendre les marchés de proximité et leurs spécificités.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" id="faq-q5" aria-expanded="false" aria-controls="faq-a5">
+            <span>Comment se déroule la collaboration ?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer" id="faq-a5" role="region" aria-labelledby="faq-q5">
+            <p>Tout commence par un appel de découverte gratuit pour comprendre votre projet. Nous établissons ensuite un devis, un calendrier clair, et on démarre ! Vous êtes impliqué et informé à chaque étape.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" id="faq-q6" aria-expanded="false" aria-controls="faq-a6">
+            <span>Proposez-vous des forfaits de maintenance ?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer" id="faq-a6" role="region" aria-labelledby="faq-q6">
+            <p>Oui, nous proposons des forfaits de maintenance mensuelle pour garder votre site à jour, sécurisé et performant. Demandez-nous les détails lors de votre appel de découverte.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════
+       CONTACT
+  ══════════════════════════════════════════ -->
+  <section id="contact" class="section section--abyss" aria-label="Nous contacter">
+    <div class="container">
+
+      <header class="section-header reveal">
+        <span class="section-tag">Contact</span>
+        <h2 class="section-title">Démarrons votre projet</h2>
+        <p class="section-desc">Un appel de 30 minutes suffit pour tout changer. Parlons de votre projet, sans engagement.</p>
+      </header>
+
+      <div class="contact-grid">
+
+        <form
+          class="contact-form reveal"
+          id="contact-form"
+          action="https://formsubmit.co/sofiane.kerkouche@gmail.com"
+          method="POST"
+          novalidate
+        >
+          <input type="hidden" name="_subject"  value="💼 Nouveau projet via Impulzia" />
+          <input type="hidden" name="_captcha"  value="false" />
+          <input type="hidden" name="_template" value="table" />
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Nom et prénom</label>
+              <input type="text" id="name" name="name" placeholder="Jean Dupont" required autocomplete="name" />
+            </div>
+            <div class="form-group">
+              <label for="email">Adresse email</label>
+              <input type="email" id="email" name="email" placeholder="jean@exemple.fr" required autocomplete="email" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Téléphone <span class="form-optional">(optionnel)</span></label>
+            <input type="tel" id="phone" name="phone" placeholder="+33 6 00 00 00 00" autocomplete="tel" />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Décrivez votre projet</label>
+            <textarea id="message" name="message" rows="5" placeholder="Je souhaite créer un site vitrine pour mon activité, j'aimerais aussi travailler sur mon référencement local..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--full" id="submit-btn">
+            Envoyer ma demande <span class="btn-arrow" aria-hidden="true">→</span>
+          </button>
+        </form>
+
+        <aside class="contact-info reveal delay-1" aria-label="Informations de contact">
+          <div class="contact-info-card">
+            <div class="contact-icon" aria-hidden="true">✉️</div>
+            <div>
+              <div class="contact-label">Email</div>
+              <a href="mailto:sofiane.kerkouche@gmail.com" class="contact-value">sofiane.kerkouche@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <div class="contact-icon" aria-hidden="true">⚡</div>
+            <div>
+              <div class="contact-label">Temps de réponse</div>
+              <div class="contact-value">Sous 24h ouvrées</div>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <div class="contact-icon" aria-hidden="true">📞</div>
+            <div>
+              <div class="contact-label">Appel découverte</div>
+              <div class="contact-value">30 min — Gratuit &amp; sans engagement</div>
+            </div>
+          </div>
+
+          <div class="contact-promise">
+            <div class="promise-dot" aria-hidden="true"></div>
+            <p>Chaque projet mérite une attention particulière. Nous répondons à toutes les demandes sérieusement et rapidement.</p>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <a href="#accueil" class="nav-logo" aria-label="Impulzia — Retour en haut">
+            <svg width="30" height="30" viewBox="0 0 64 64" overflow="visible" aria-hidden="true">
+              <defs>
+                <linearGradient id="logo-footer" x1="0%" y1="100%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="#1A73E8"/>
+                  <stop offset="100%" stop-color="#00D4AA"/>
+                </linearGradient>
+              </defs>
+              <line x1="10" y1="54" x2="32" y2="34" stroke="url(#logo-footer)" stroke-width="3.5" stroke-linecap="round"/>
+              <line x1="32" y1="34" x2="54" y2="14" stroke="url(#logo-footer)" stroke-width="3.5" stroke-linecap="round"/>
+              <circle cx="10" cy="54" r="6"  fill="#1A73E8"/>
+              <circle cx="32" cy="34" r="8"  fill="url(#logo-footer)"/>
+              <circle cx="54" cy="14" r="11" fill="#00D4AA"/>
+            </svg>
+            <span class="nav-wordmark">Impulzia</span>
+          </a>
+          <p class="footer-tagline">Le digital, au service de vos ambitions.</p>
+          <p class="footer-desc">Agence web spécialisée en création web, SEO et stratégie digitale pour les entreprises locales qui veulent s'imposer en ligne.</p>
+        </div>
+
+        <nav class="footer-links" aria-label="Navigation footer">
+          <h4 class="footer-heading">Navigation</h4>
+          <ul role="list">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#tarifs">Tarifs</a></li>
+            <li><a href="#apropos">À propos</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-links" aria-label="Expertises footer">
+          <h4 class="footer-heading">Expertises</h4>
+          <ul role="list">
+            <li><a href="#services">Création Web</a></li>
+            <li><a href="#services">Branding &amp; Design</a></li>
+            <li><a href="#services">SEO &amp; Visibilité Locale</a></li>
+            <li><a href="#services">Stratégie Digitale</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-contact">
+          <h4 class="footer-heading">Contact</h4>
+          <a href="mailto:sofiane.kerkouche@gmail.com" class="footer-email">sofiane.kerkouche@gmail.com</a>
+          <a href="#contact" class="btn btn--primary btn--sm" style="margin-top:1.5rem; display:inline-flex;" id="footer-cta">Démarrer un projet</a>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Impulzia. Tous droits réservés.</p>
+        <p>Création web &nbsp;&middot;&nbsp; SEO &nbsp;&middot;&nbsp; Stratégie digitale</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
