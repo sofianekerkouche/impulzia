@@ -617,20 +617,61 @@
 })();
 
 
+
 /* ══════════════════════════════════════════════
    8. CONTACT FORM — UX feedback
    ══════════════════════════════════════════════ */
 (function initForm() {
-  const form   = document.getElementById('contact-form');
+  const form = document.getElementById('contact-form');
   const submit = document.getElementById('submit-btn');
-  if (!form || !submit) return;
+  const status = document.getElementById('form-status');
 
-  form.addEventListener('submit', () => {
-    submit.disabled     = true;
-    submit.textContent  = 'Envoi en cours...';
+  if (!form || !submit || !status) return;
+
+  form.addEventListener('submit', async (event) => {
+    event.preventDefault();
+
+    submit.disabled = true;
+    submit.textContent = 'Envoi en cours...';
     submit.style.opacity = '0.7';
+
+    status.hidden = false;
+    status.className = 'form-status is-loading';
+    status.textContent = 'Envoi de votre message en cours…';
+
+    try {
+      const response = await fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: {
+          Accept: 'application/json'
+        }
+      });
+
+      const result = await response.json();
+
+      if (!response.ok || !result.success) {
+        throw new Error(result.message || 'Échec de l’envoi');
+      }
+
+      status.className = 'form-status is-success';
+      status.textContent =
+        'Votre message a bien été envoyé ! Nous reviendrons vers vous rapidement.';
+
+      form.reset();
+    } catch (error) {
+      status.className = 'form-status is-error';
+      status.textContent =
+        'Une erreur est survenue lors de l’envoi. Veuillez réessayer ou nous contacter directement.';
+
+    } finally {
+      submit.disabled = false;
+      submit.textContent = 'Envoyer le message';
+      submit.style.opacity = '';
+    }
   });
 })();
+
 
 
 /* ══════════════════════════════════════════════

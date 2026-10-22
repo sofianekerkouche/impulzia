@@ -1642,3 +1642,32 @@ a.contact-value:hover { color: var(--signal); }
   .case-detail-page .case-project-stack { gap: 10px; }
   .case-detail-page .case-cta { padding-top: 36px; }
 }
+
+.form-status {
+  margin-top: 16px;
+  padding: 14px 16px;
+  border-radius: 10px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.form-status.is-success {
+  display: block;
+  color: #0f766e;
+  background: rgba(20, 184, 166, 0.10);
+  border: 1px solid rgba(20, 184, 166, 0.30);
+}
+
+.form-status.is-error {
+  display: block;
+  color: #b91c1c;
+  background: rgba(239, 68, 68, 0.08);
+  border: 1px solid rgba(239, 68, 68, 0.25);
+}
+
+.form-status.is-loading {
+  display: block;
+  color: #64748b;
+  background: rgba(148, 163, 184, 0.10);
+  border: 1px solid rgba(148, 163, 184, 0.25);
+}
