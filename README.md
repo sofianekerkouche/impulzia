@@ -16,3 +16,10 @@ Ouvrir `index.html` dans un navigateur. Pour des URLs locales fiables, lancer un
 ## Header et footer communs
 
 Le header et le footer de la page d’accueil sont les références officielles du site. Ils sont conservés comme sources uniques dans `components/header.html` et `components/footer.html`. Pour les modifier, édite uniquement ces deux fichiers puis exécute `python sync-layout.py` depuis le dossier `impulzia` : le script synchronise toutes les pages HTML et adapte les liens internes à leur emplacement. Pour toute nouvelle page HTML, lance ce script après sa création afin qu’elle récupère exactement le même header et footer.
+
+
+## Pages légales (version de travail)
+- `mentions-legales.html`
+- `politique-confidentialite.html`
+
+Les deux pages sont liées depuis le pied de page. Certaines informations juridiques et pratiques de traitement restent à confirmer avant publication définitive, notamment l'identité juridique du responsable, les formalités applicables, la conservation des données et les éventuels transferts internationaux via les prestataires.
