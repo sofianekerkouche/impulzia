@@ -1849,3 +1849,28 @@ a.contact-value:hover { color: var(--signal); }
   .container { max-width: 1120px; padding-left: 28px; padding-right: 28px; }
   .hero-title { font-size: clamp(2.8rem, 4.4vw, 3.5rem); }
 }
+
+
+/* V42.7 — ajustements mobile et finitions communes */
+@media (max-width: 768px) {
+  /* Hero : titre plus affirmé sur smartphone */
+  .hero-title { font-size: clamp(2.35rem, 8.2vw, 3.05rem); line-height: 1.08; }
+
+  /* À propos : conserver une respiration à gauche et une lecture naturelle */
+  .about-content { padding-left: 8px; padding-right: 2px; }
+  .about-content .section-title.about-title { text-align: left !important; }
+  .about-content > p.about-text { text-align: left !important; }
+
+  /* Réseau neuronal décoratif de la zone contact : moins encombrant */
+  .contact-visual { min-height: 220px; }
+  .contact-neural-mark { width: min(62%, 230px); }
+
+  /* Footer : éviter que le contenu touche le bord de l'écran */
+  .footer-grid, .footer-bottom { margin-left: 8px; margin-right: 8px; }
+  .footer-grid { width: calc(100% - 16px); }
+  .footer-bottom { width: calc(100% - 16px); }
+}
+
+/* Boutons des offres : bordure turquoise cohérente avec la carte Essentia */
+#cta-lanceo, #cta-horizon { border-color: rgba(0, 212, 170, 0.3); }
+#cta-lanceo:hover, #cta-horizon:hover { border-color: rgba(0, 212, 170, 0.55); }
