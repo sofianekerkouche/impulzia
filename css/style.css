@@ -788,17 +788,18 @@ h1, h2, h3, h4, h5, h6 {
 .pricing-card--featured:hover { transform: translateY(-14px); }
 .pricing-badge {
   position: absolute;
-  top: -14px;
+  top: -17px;
   left: 50%;
   transform: translateX(-50%);
   background: var(--grad);
   color: var(--clarity);
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
   font-family: var(--font-head);
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  padding: 5px 18px;
+  padding: 8px 24px;
+  box-shadow: 0 4px 18px rgba(0, 212, 170, 0.2);
   border-radius: 100px;
   white-space: nowrap;
 }
@@ -1467,4 +1468,177 @@ a.contact-value:hover { color: var(--signal); }
   #navbar .nav-links { left: 0; transform: none; }
   .footer-grid { grid-template-columns: 1fr; }
   .footer-contact { grid-column: auto; }
+}
+
+
+/* ── ÉTUDES DE CAS / RÉALISATIONS ───────────── */
+.case-card-actions{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-top:18px}
+.case-card-actions .portfolio-link{margin-top:0}
+.case-detail{min-height:100vh;background:var(--abyss)}
+.case-nav{position:relative;z-index:5;border-bottom:1px solid var(--border);background:rgba(5,12,26,.92)}
+.case-nav .nav-inner{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.case-back{color:var(--muted);font-size:.9rem;display:inline-flex;align-items:center;gap:8px}
+.case-back:hover{color:var(--signal)}
+.case-hero{padding:82px 0 58px;position:relative;overflow:hidden;background:radial-gradient(ellipse at 80% 10%,rgba(26,115,232,.16),transparent 45%),radial-gradient(ellipse at 20% 80%,rgba(0,212,170,.08),transparent 42%)}
+.case-hero-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:52px;align-items:center}
+.case-eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--signal);font-size:.76rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:20px}
+.case-title{font-size:clamp(2.5rem,5vw,4.6rem);letter-spacing:-.055em;line-height:1.02;margin-bottom:22px}
+.case-intro{color:#b7c4d3;font-size:1.08rem;line-height:1.8;max-width:56ch}
+.case-meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.case-chip{border:1px solid var(--border);border-radius:999px;padding:7px 12px;color:#c3cfdd;font-size:.78rem;background:rgba(255,255,255,.035)}
+.case-hero-image{border:1px solid rgba(255,255,255,.12);border-radius:18px;overflow:hidden;background:#101a2b;box-shadow:0 28px 70px rgba(0,0,0,.36)}
+.case-hero-image img{width:100%;height:auto;display:block}
+.case-content{padding:72px 0}
+.case-content--alt{background:rgba(255,255,255,.018);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.case-two-col{display:grid;grid-template-columns:.72fr 1.28fr;gap:54px;align-items:start}
+.case-section-label{color:var(--signal);font-size:.76rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:13px}
+.case-h2{font-size:clamp(1.8rem,3vw,2.7rem);margin-bottom:18px;letter-spacing:-.04em}
+.case-copy{color:#aebdcd;line-height:1.85;max-width:72ch}
+.case-copy p+p{margin-top:14px}
+.case-list{display:grid;gap:14px;margin-top:22px}
+.case-list li{display:flex;gap:12px;color:#c5d0dd;line-height:1.65}
+.case-list li:before{content:'↗';color:var(--signal);font-weight:700;flex:0 0 auto}
+.case-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-top:30px}
+.case-shot{border:1px solid var(--border);border-radius:14px;overflow:hidden;background:#0d1b2e}
+.case-shot img{width:100%;height:auto;display:block}
+.case-shot figcaption{padding:12px 15px;color:var(--muted);font-size:.82rem;line-height:1.55}
+.case-shot--wide{grid-column:1/-1}
+.case-shot--wide img{max-height:720px;object-fit:contain;object-position:top center;background:#080e18}
+.case-before-after{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:28px}
+.case-before-after figure{border:1px solid var(--border);border-radius:14px;overflow:hidden;background:#0d1b2e}
+.case-before-after img{width:100%;height:auto;display:block}
+.case-before-after figcaption{padding:12px 15px;font-size:.83rem;color:#c3cfdd;display:flex;align-items:center;gap:9px}
+.case-before-after figcaption span{color:var(--signal);font-weight:700;text-transform:uppercase;font-size:.7rem;letter-spacing:.08em}
+.case-device-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;align-items:start;margin-top:28px}
+.case-device-gallery figure{border:1px solid var(--border);border-radius:14px;overflow:hidden;background:#0d1b2e}
+.case-device-gallery img{width:100%;height:auto;display:block}
+.case-device-gallery figcaption{padding:10px 12px;color:var(--muted);font-size:.78rem}
+.case-cta{padding:66px 0;background:radial-gradient(ellipse at 50% 100%,rgba(0,212,170,.09),transparent 60%)}
+.case-cta-inner{text-align:center;max-width:720px;margin:0 auto}
+.case-cta-inner p{color:var(--muted);margin:14px auto 24px;max-width:56ch}
+.case-footer{padding:22px 0;border-top:1px solid var(--border);color:var(--muted);font-size:.82rem}
+.case-footer .container{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+.case-card-detail{display:inline-flex;align-items:center;gap:8px;color:#fff;font-weight:600;font-size:.9rem}
+.case-card-detail:hover{color:var(--signal)}
+@media(max-width:800px){.case-hero{padding:56px 0 42px}.case-hero-grid,.case-two-col{grid-template-columns:1fr;gap:28px}.case-hero-image{order:-1}.case-content{padding:54px 0}.case-gallery{gap:12px}.case-device-gallery{grid-template-columns:repeat(2,minmax(0,1fr))}.case-title{font-size:clamp(2.4rem,10vw,3.7rem)}}
+@media(max-width:520px){.case-gallery,.case-before-after{grid-template-columns:1fr}.case-shot--wide{grid-column:auto}.case-device-gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.case-nav .nav-inner{min-height:64px}.case-back{font-size:.82rem}.case-content{padding:44px 0}}
+
+/* Portfolio refinements — V25 */
+.portfolio-address{max-width:82%;font-size:10px}
+.portfolio-cta{padding:70px 0;background:radial-gradient(ellipse at 78% 50%,rgba(26,115,232,.12),transparent 43%),radial-gradient(ellipse at 90% 65%,rgba(0,212,170,.09),transparent 42%)}
+.portfolio-cta-inner{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:48px}
+.portfolio-cta-copy{max-width:560px}
+.portfolio-cta-copy p{color:var(--muted);margin:14px 0 24px;max-width:56ch;line-height:1.8}
+.portfolio-cta-visual{display:flex;justify-content:center;align-items:center;min-width:0}
+.portfolio-cta-visual .neural-articulated-svg{width:min(100%,340px);height:auto;overflow:visible;filter:drop-shadow(0 0 24px rgba(0,212,170,.08))}
+@media(max-width:800px){.portfolio-cta-inner{grid-template-columns:1fr;gap:24px}.portfolio-cta-visual{grid-row:1}.portfolio-cta-visual .neural-articulated-svg{width:min(70%,260px)}.portfolio-cta-copy{max-width:none}}
+
+/* V26 — portfolio neural visuals and shared project CTA */
+.case-hero-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(280px,.9fr);align-items:center;gap:clamp(2rem,5vw,5rem)}
+.case-hero-copy{min-width:0}
+.case-hero-visual,.portfolio-cta-visual{display:flex;align-items:center;justify-content:center;min-width:0;position:relative}
+.case-hero-visual .hero-logo-mark,.portfolio-cta-visual .hero-logo-mark{width:min(100%,420px);aspect-ratio:1;display:flex;align-items:center;justify-content:center}
+.case-hero-visual .neural-articulated-svg,.portfolio-cta-visual .neural-articulated-svg{width:100%;height:auto;max-width:360px;overflow:visible}
+.portfolio-cta-inner{display:grid;grid-template-columns:minmax(0,1fr) minmax(260px,.8fr);align-items:center;gap:clamp(2rem,5vw,5rem)}
+.portfolio-cta-copy{min-width:0}
+.portfolio-cta-visual{min-height:280px}
+.portfolio-cta-visual .hero-logo-mark{max-width:340px}
+@media(max-width:760px){.case-hero-grid,.portfolio-cta-inner{grid-template-columns:1fr}.case-hero-visual{max-width:300px;margin:0 auto}.portfolio-cta-visual{grid-row:1;min-height:0;max-width:260px;margin:0 auto}.portfolio-cta-copy{grid-row:2}.case-hero-grid{gap:1.5rem}}
+
+
+/* V31 — portfolio listing hero: shared animated constellation background */
+.case-hero.portfolio-list-hero{padding-top:calc(var(--nav-h, 76px) + 54px);background:radial-gradient(circle at 50% 15%, #0B172B 0%, #050C1A 75%)}
+.portfolio-list-hero #particle-canvas{position:absolute;inset:0;width:100%;height:100%;z-index:0;opacity:.24;pointer-events:none}
+.portfolio-list-hero .hero-glow{z-index:0}
+.portfolio-list-hero .container{position:relative;z-index:1}
+.portfolio-list-hero .hero-glow--blue{top:-100px;left:-100px}
+.portfolio-list-hero .hero-glow--teal{bottom:0;right:5%}
+.case-card-actions{justify-content:flex-end}
+.case-card-detail{color:var(--signal);margin-left:auto}
+.case-card-detail:hover{color:#fff}
+@media(max-width:800px){.case-hero.portfolio-list-hero{padding-top:calc(var(--nav-h, 64px) + 42px)}}
+
+/* Portfolio intro: restrained constellation atmosphere for readable copy */
+.case-hero.portfolio-list-hero::after{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;background:linear-gradient(90deg,rgba(5,12,26,.58) 0%,rgba(5,12,26,.28) 58%,rgba(5,12,26,.12) 100%)}
+.case-hero.portfolio-list-hero .container{z-index:1}
+
+
+/* V36 — conventions communes aux pages détaillées */
+.case-detail-badge{margin-bottom:20px}
+.case-card-actions--left{justify-content:flex-start}
+.case-section-label{display:inline-flex;align-items:center;gap:8px;margin-bottom:16px}
+.case-section-label::before{content:"";display:inline-block;width:20px;height:2px;background:var(--grad);border-radius:2px}
+.case-gallery--showcase{grid-template-columns:minmax(0,1fr) minmax(150px,.32fr);align-items:end}
+.case-gallery--showcase .case-shot--wide{grid-column:auto}
+.case-gallery--showcase .case-shot--wide img{max-height:none}
+.case-gallery--showcase .case-shot--mobile img{max-height:620px;object-fit:contain;object-position:top center;background:#080e18}
+@media(max-width:700px){.case-gallery--showcase{grid-template-columns:1fr}.case-gallery--showcase .case-shot--mobile{max-width:260px;margin:0 auto}}
+
+
+/* V37 — fond continu des pages détail et conventions à réutiliser */
+.case-detail-page main{background:radial-gradient(circle at 50% 8%, #0B172B 0%, #050C1A 75%);}
+.case-detail-page .case-hero.portfolio-list-hero{background:transparent;}
+.case-detail-page .case-content,.case-detail-page .case-content--alt{background:transparent;border-color:transparent;}
+.case-detail-page .case-cta{background:radial-gradient(ellipse at 50% 100%,rgba(0,212,170,.055),transparent 60%);}
+.case-detail-page .case-content{position:relative;}
+.case-detail-page .case-content + .case-content::before{content:"";position:absolute;top:0;left:50%;transform:translateX(-50%);width:min(100% - 48px,1200px);height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.055),transparent);}
+.case-detail-page .case-two-col{grid-template-columns:.55fr 1.45fr;}
+.case-detail-page .case-gallery{margin-top:24px;}
+@media(max-width:800px){.case-detail-page .case-two-col{grid-template-columns:1fr;gap:18px;}}
+
+
+/* V40 — une seule zone de fond continu pour l’introduction et toutes les sections de contenu.
+   Le CTA « Votre projet » et le footer restent en dehors de .case-detail-main et conservent leur style d’origine. */
+.case-detail-page .case-detail-main {
+  position: relative;
+  isolation: isolate;
+  overflow: clip;
+  background: radial-gradient(circle at 50% 15%, #0B172B 0%, #050C1A 75%);
+}
+.case-detail-page .case-detail-main > #particle-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .24;
+  pointer-events: none;
+  z-index: 0;
+}
+.case-detail-page .case-detail-main > section {
+  position: relative;
+  z-index: 1;
+  background: transparent !important;
+  border-color: transparent !important;
+}
+.case-detail-page .case-detail-main .case-hero.portfolio-list-hero {
+  background: transparent !important;
+}
+.case-detail-page .case-detail-main .case-hero.portfolio-list-hero::after { display: none; }
+.case-detail-page .case-content + .case-content::before { display: none; }
+.case-detail-page .case-project-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 22px;
+}
+.case-detail-page .case-project-stack .case-copy {
+  width: 100%;
+  max-width: 850px;
+}
+@media (max-width: 800px) {
+  .case-detail-page .case-project-stack { gap: 16px; }
+}
+
+
+/* V41 — suppression du bouton externe et resserrement des espacements des pages réalisation. */
+.case-detail-page .case-hero.portfolio-list-hero { padding-bottom: 30px; }
+.case-detail-page .case-content { padding-top: 34px; padding-bottom: 34px; }
+.case-detail-page .case-project-stack { gap: 12px; }
+.case-detail-page .case-detail-main .case-gallery { margin-top: 16px; }
+.case-detail-page .case-cta { padding-top: 44px; }
+@media (max-width: 800px) {
+  .case-detail-page .case-hero.portfolio-list-hero { padding-bottom: 24px; }
+  .case-detail-page .case-content { padding-top: 26px; padding-bottom: 26px; }
+  .case-detail-page .case-project-stack { gap: 10px; }
+  .case-detail-page .case-cta { padding-top: 36px; }
 }

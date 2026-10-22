@@ -11,6 +11,7 @@
   const canvas = document.getElementById('particle-canvas');
   if (!canvas) return;
   const ctx = canvas.getContext('2d');
+  const isPortfolioIntro = !!canvas.closest('.portfolio-list-hero') || !!canvas.closest('.case-detail-main');
 
   let stars = [];
   let nodes = [];
@@ -37,7 +38,7 @@
   function initUniverse() {
     // 1. Distant twinkling stars (deep space background)
     stars = [];
-    const starCount = Math.min(Math.floor((W * H) / 9000), 110);
+    const starCount = Math.min(Math.floor((W * H) / (isPortfolioIntro ? 22000 : 9000)), isPortfolioIntro ? 38 : 110);
     for (let i = 0; i < starCount; i++) {
       const isCyan = Math.random() < 0.25;
       const isBlue = Math.random() < 0.25;
@@ -56,7 +57,7 @@
 
     // 2. Constellation nodes (prominent interconnected cosmic web)
     nodes = [];
-    const nodeCount = Math.min(Math.floor((W * H) / 12000), 75);
+    const nodeCount = Math.min(Math.floor((W * H) / (isPortfolioIntro ? 32000 : 12000)), isPortfolioIntro ? 24 : 75);
     for (let i = 0; i < nodeCount; i++) {
       nodes.push({
         x: Math.random() * W,
@@ -69,11 +70,11 @@
     }
   }
 
-  const MAX_DIST = 175; // Increased connection radius for richer constellations
+  const MAX_DIST = isPortfolioIntro ? 125 : 175; // Keep portfolio connections sparse and subtle
   let time = 0;
 
   function addShootingStar() {
-    if (Math.random() < 0.008 && shootingStars.length < 2) {
+    if (!isPortfolioIntro && Math.random() < 0.008 && shootingStars.length < 2) {
       shootingStars.push({
         x: Math.random() * W * 0.7,
         y: Math.random() * H * 0.3,
