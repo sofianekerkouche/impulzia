@@ -1800,3 +1800,52 @@ a.contact-value:hover { color: var(--signal); }
 @media (max-width: 640px) {
   .footer-legal-links { gap: 12px; }
 }
+
+
+/* ── AJUSTEMENT D'ÉCHELLE DESKTOP — V42.6 ─────────────────
+   Améliore la lisibilité à 100 % sur les grands écrans sans
+   modifier les contenus, le header/footer ou les règles mobile. */
+@media (min-width: 1200px) {
+  :root { --section-pad: 88px; }
+
+  .container {
+    max-width: 1240px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  body { font-size: 1.03rem; }
+
+  .hero-title {
+    font-size: clamp(3.15rem, 4.5vw, 4.1rem);
+    line-height: 1.12;
+  }
+
+  .hero-desc {
+    font-size: 1.2rem;
+    max-width: 520px;
+  }
+
+  .section-title {
+    font-size: clamp(2.35rem, 3.1vw, 3rem);
+  }
+
+  .section-desc {
+    font-size: 1.15rem;
+    max-width: 620px;
+  }
+
+  .portfolio-header {
+    max-width: 860px;
+    margin-bottom: 44px;
+  }
+
+  .portfolio-grid { gap: 32px; }
+}
+
+/* Écrans desktop intermédiaires : largeur plus confortable,
+   sans appliquer l'agrandissement typographique maximal. */
+@media (min-width: 1025px) and (max-width: 1199px) {
+  .container { max-width: 1120px; padding-left: 28px; padding-right: 28px; }
+  .hero-title { font-size: clamp(2.8rem, 4.4vw, 3.5rem); }
+}
