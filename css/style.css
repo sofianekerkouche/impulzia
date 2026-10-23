@@ -625,6 +625,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
 }
+.hero-mobile-pillars { display: none; }
 .float-card--1 {
   top: 6%;
   left: -8%;
@@ -1228,6 +1229,27 @@ a.contact-value:hover { color: var(--signal); }
 
 @media (max-width: 768px) {
   :root { --section-pad: 64px; --nav-h: 64px; }
+
+  /* Mobile hero: headline first, then the neural visual and three agency pillars. */
+  .hero-inner { display: flex; flex-direction: column; gap: 20px; text-align: center; }
+  .hero-content { display: contents; }
+  .hero-badge { display: none; }
+  .hero-title { order: 1; width: 100%; margin-bottom: 0; }
+  .hero-visual { display: flex; order: 2; width: 100%; margin: 0 auto; }
+  .hero-logo-mark { width: min(82%, 260px); max-width: 260px; margin: 0 auto; }
+  .hero-desc { order: 3; margin-bottom: 12px; }
+  .hero-actions { order: 4; margin-bottom: 24px; }
+  .hero-visual .float-card { display: none; }
+  .hero-mobile-pillars { display: block; position: absolute; inset: 0; pointer-events: none; }
+  .hero-mobile-pillar { position: absolute; z-index: 2; display: inline-flex; align-items: center; justify-content: center; padding: 7px 11px; border: 1px solid rgba(0,212,170,.4); border-radius: 999px; background: rgba(7,18,34,.9); color: var(--clarity); font-size: .72rem; font-weight: 600; line-height: 1.2; white-space: nowrap; box-shadow: 0 4px 18px rgba(0,0,0,.18); will-change: transform; animation: hero-pillar-float 4.8s ease-in-out infinite; }
+  @keyframes hero-pillar-float { 0%, 100% { transform: translate3d(0, 0, 0); } 50% { transform: translate3d(0, -6px, 0); } }
+  .hero-mobile-pillar--seo { animation-delay: -1.6s; }
+  .hero-mobile-pillar--strategy { animation-delay: -3.2s; }
+  @media (prefers-reduced-motion: reduce) { .hero-mobile-pillar { animation: none; } }
+  .hero-mobile-pillar--web { left: -8%; top: 12%; }
+  .hero-mobile-pillar--seo { right: -8%; top: 43%; }
+  .hero-mobile-pillar--strategy { left: 4%; bottom: 2%; }
+  .hero-scroll-hint { display: none; }
   .nav-links { display: none; flex-direction: column; position: fixed; top: var(--nav-h); left: 0; right: 0; background: rgba(5,12,26,0.97); backdrop-filter: blur(20px); padding: 24px 28px 32px; gap: 4px; border-bottom: 1px solid var(--border); }
   .nav-links.open { display: flex; }
   .nav-links li a { display: block; padding: 12px 16px; font-size: 1rem; }
